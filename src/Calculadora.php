@@ -49,4 +49,19 @@ class Calculadora
         $this->num2 = $num2;
         return $num1 + $num2;
     }
+
+    /**
+     * Restar function Doc Comment
+     *
+     * @param $num1 primer sumando
+     * @param $num2 segundo sumando
+     *
+     * @return $num1-$num2
+     **/
+    public function restar($num1, $num2)
+    {
+        $this->num1 = $num1;
+        $this->num2 = $num2;
+        return $num1 - $num2;
+    }
 }
