@@ -1,6 +1,6 @@
 # Despliegue de Aplicaciones Web (CIP_DAW_DPL) - Pruebas Unitarias y Análisis de Código 
 ## Testing of web application deployment course - DevOps! _by <span style="color:blue; opacity: 0.80">  javi2gar</span> (vernedevelop)  
-## Versión 0.7.0  [![Build Status](https://travis-ci.org/javi2gar/calculadora-php.svg?branch=master)](https://travis-ci.org/javi2gar/calculadora-php) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vendor-javi2gar_calculadora-php&metric=alert_status)](https://sonarcloud.io/dashboard?id=vendor-javi2gar_calculadora-php)  
+## Versión 0.6.0  [![Build Status](https://travis-ci.org/javi2gar/calculadora-php.svg?branch=master)](https://travis-ci.org/javi2gar/calculadora-php) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vendor-javi2gar_calculadora-php&metric=alert_status)](https://sonarcloud.io/dashboard?id=vendor-javi2gar_calculadora-php)  
 
 ## [Instrucciones de las prácticas a entregar](https://github.com/javi2gar/calculadora-php/blob/master/README_FILES/INSTRUCCIONES.md).
 
@@ -10,9 +10,6 @@
 - [¡Enlace a los test en **_SonarCloud_** _Calculadora-php_ desplegada en _DockerHub_!](https://sonarcloud.io/dashboard?id=vendor-javi2gar_calculadora-php).  
 
 - [¡Enlace al proyecto en **_Travis-CI_** _Calculadora-php_ !](https://travis-ci.org/javi2gar/calculadora-php)
-
-
-- [¡Enlace a la App **_Calculadora-travis_** desplegada en _Heroku_!](https://calculadora-travis.herokuapp.com). 
 
 ## Pasos de la práctica  ![Comandos de ayuda]( https://github.com/javi2gar/calculadora-php/blob/master/README_FILES/COMANDOS_AYUDA.md)
 
