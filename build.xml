@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <project name ="calculadora-travis" default = "phploc">
+
+        <!-- Ficheros a auditar -->
+        <fileset dir="./" id="targetfiles">
+            <include name="./src" />
+            <include name="./tests" />
+        </fileset>
+
+
+        <!-- PHPLOC -->
+        <target name="phploc" description="Measures the size of the project and count it's tests">
+            <phploc countTests="true" reportType="txt" reportName="loc" reportDirectory="reports/logs_codereview">
+                <fileset refid="targetfiles" />
+            </phploc>
+        </target>
+        <echo msg="Copying to build directory..."/>
+
+
+        <!-- PHPUnit -->
+        <phpunit haltonfailure="true" haltonerror="true">
+            <formatter todir="reports" type="xml"/>
+            <batchtest>
+                <fileset dir="./tests">
+                <include name="**/*Test*.php"/>
+                </fileset>
+            </batchtest>
+        </phpunit>
+
+        <phpcpd file="./">
+            <formatter type="pmd" outfile="reports/pmd-cpd.xml"/>
+        </phpcpd>
+
+    </project>

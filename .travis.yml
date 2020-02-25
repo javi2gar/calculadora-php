@@ -1,0 +1,43 @@
+dist: trusty
+sudo: required
+language: php
+
+php:
+  - 7.3
+
+addons:
+  sonarcloud:
+    organization: "javi2gar"
+    token:
+      secure: "$calculadora_php" # encrypted value of your token SONAR_CLOUD_API_KEY
+    
+before_script:
+  - composer self-update
+  - composer install --no-interaction --prefer-source --dev 
+  - vendor/bin/phpcs --config-set colors 1 show_progress 1
+
+script:
+
+  - phpunit
+  - vendor/bin/phplint ./src 
+  #- vendor/bin/phpcbf ./src   
+  #- vendor/bin/phpcbf ./tests
+  #- vendor/bin/phpcs -n --report=summary ./src
+  #- vendor/bin/phpcs --report=summary ./src
+  #- vendor/bin/phpmd  ./src
+  #- vendor/bin/phpmd  ./tests
+  #- vendor/bin/phpcpd ./src
+  - vendor/bin/phploc ./src
+  - vendor/bin/phploc ./tests
+
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - vendor/bin/sonar-scanner
+
+  #- vendor/bin/phing
+     
+deploy: 
+
+
+
+#after_success:
+    #- bash <(curl -s https://codecov.io/bash)

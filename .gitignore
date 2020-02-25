@@ -1,0 +1,5 @@
+.scannerwork
+/vendor
+/reports
+.phplint-cache
+.phpunit.result.cache
