@@ -36,6 +36,10 @@ script:
   #- vendor/bin/phing
      
 deploy: 
+  provider: heroku
+    api_key: 
+      secure: "$HEROKU_API_KEY"
+    app: calculadora-travis  
 
 
 
