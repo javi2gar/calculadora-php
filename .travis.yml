@@ -42,19 +42,20 @@ script:
      
   # build docker images
   - docker build -t vernedevelop/calculadora-php:version0.8.0 .
-  deploy: 
 
-    - provider: heroku
-      api_key: 
-        secure: "$HEROKU_API_KEY"
-      app: calculadora-travis  
+deploy: 
+
+  - provider: heroku
+    api_key: 
+      secure: "$HEROKU_API_KEY"
+    app: calculadora-travis  
       
-    - provider: script
-      script:
-        # push to dockerhub
-        docker push vernedevelop/calculadora-php;
-      on:
-        branch: master
+  - provider: script
+    script:
+      # push to dockerhub
+      docker push vernedevelop/calculadora-php;
+    on:
+      branch: master
 
 
 #after_success:
