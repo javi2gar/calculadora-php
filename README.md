@@ -11,6 +11,23 @@
 
 - [¡Enlace al proyecto en **_Travis-CI_** _Calculadora-php_ !](https://travis-ci.org/javi2gar/calculadora-php)
 
+- [¡Enlace a la App **_Calculadora-travis_** desplegada en _Heroku_!](https://calculadora-travis.herokuapp.com). 
+
+- [¡Enlace a la _imagen_ **_Calculadora-php_** desplegada en _DockerHub_!](https://hub.docker.com/r/vernedevelop/calculadora-php).
+
+
+### Imagen final de la aplciación desplegada
+
+![Calculadora-php](README_FILES/images_readme/calculadora.jpg)
+	
+>  
+### Si quieres obtener la imagen y desplegar el contenedor de vernedevelop/calculadora-php
+
+	docker pull vernedevelop/calculadora-php
+
+	docker run -it -d -p 8080:80 vernedevelop/calculadora-php
+
+
 ## Pasos de la práctica  ![Comandos de ayuda]( https://github.com/javi2gar/calculadora-php/blob/master/README_FILES/COMANDOS_AYUDA.md)
 
 ### _Estructura incial del proyecto_ ###
