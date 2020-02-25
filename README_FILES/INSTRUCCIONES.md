@@ -42,3 +42,9 @@
 
 > **Versión 0.6.0:**
 > - src/index.php: Se implementa la página principal de la aplicación en la que permite realizar una operación aritmética utilizando la clase Calculadora.
+
+## Unidad de Trabajo 03 - Heroku
+>
+> - Modificar el fichero __*.travis.yml*__ de la práctica entregada de la Unidad de Trabajo 02 para que, si las pruebas unitarias, análisis de código y sintaxis han sido correctas, **despliegue la versión de la aplicación en Heroku**." 
+
+> - Implementar este cambio como la **versión 0.7.0** de la aplicación mediante una rama feature/X, fusionarla con la rama master, actualizar la rama master en *__GitHub__* y subir la rama __feature/X__ a Git Hub.
