@@ -10,7 +10,12 @@ addons:
     organization: "javi2gar"
     token:
       secure: "$calculadora_php" # encrypted value of your token SONAR_CLOUD_API_KEY
-    
+  
+before_install:
+
+  # login to docker registries (dockerhub)
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+
 before_script:
   - composer self-update
   - composer install --no-interaction --prefer-source --dev 
@@ -35,12 +40,19 @@ script:
 
   #- vendor/bin/phing
      
-deploy: 
-  provider: heroku
-    api_key: 
-      secure: "$HEROKU_API_KEY"
-    app: calculadora-travis  
+  deploy: 
 
+    - provider: heroku
+      api_key: 
+        secure: "$HEROKU_API_KEY"
+      app: calculadora-travis  
+      
+    - provider: script
+      script:
+        # push to dockerhub
+        docker push vernedevelop/calculadora-php;
+      on:
+        branch: master
 
 
 #after_success:

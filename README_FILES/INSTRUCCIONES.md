@@ -48,3 +48,9 @@
 > - Modificar el fichero __*.travis.yml*__ de la práctica entregada de la Unidad de Trabajo 02 para que, si las pruebas unitarias, análisis de código y sintaxis han sido correctas, **despliegue la versión de la aplicación en Heroku**." 
 
 > - Implementar este cambio como la **versión 0.7.0** de la aplicación mediante una rama feature/X, fusionarla con la rama master, actualizar la rama master en *__GitHub__* y subir la rama __feature/X__ a Git Hub.
+
+## Unidad de Trabajo 04 - Docker
+
+> - Modificar el fichero __*..travis.yml*__ de la práctica entregada de la Unidad de Trabajo 03 para que, si las pruebas unitarias, análisis de código y sintaxis han sido correctas, aparte de **desplegar la versión de la aplicación en Heroku, cree una imagen Docker con la aplicación y la suba a Docker Hub**.
+
+> - Implementar este cambio como la **versión 0.8.0** de la aplicación mediante una rama feature/X, fusionarla con la rama master, actualizar la rama master en GitHub y subir la rama feature/X a Git Hub.
