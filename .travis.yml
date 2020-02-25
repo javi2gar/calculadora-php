@@ -40,6 +40,8 @@ script:
 
   #- vendor/bin/phing
      
+  # build docker images
+  - docker build -t vernedevelop/calculadora-php:version0.8.0 .
   deploy: 
 
     - provider: heroku
