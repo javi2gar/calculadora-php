@@ -28,4 +28,11 @@ class CalculadoraTest extends TestCase
         $calculadora = new Calculadora();
         $this->assertEquals($calculadora->multiplicar(1, 2), 2);
     }
+    
+    public function testDividir()
+    {
+
+        $calculadora = new Calculadora();
+        $this->assertEquals($calculadora->dividir(1, 2), 0.5);
+    }
 }

@@ -79,4 +79,23 @@ class Calculadora
         $this->num2 = $num2;
         return $num1 * $num2;
     }
+    
+    /**
+    * Dividir function Doc Comment
+    *
+    * @param $num1 primer dividendo
+    * @param $num2 segundo divisor
+    *
+    * @return $num1-$num2
+    **/
+    public function dividir($num1, $num2)
+    {
+        $this->num1 = $num1;
+        $this->num2 = $num2;
+
+        if ($num2 == 0) {
+            return "Error: ¡División por 0!";
+        }
+        return $num1 / $num2;
+    }
 }

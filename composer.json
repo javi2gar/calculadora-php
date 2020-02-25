@@ -1,7 +1,7 @@
 {     
     "name": "vendor-javi2gar/calculadora-php",
     "description": "Testing of web application deployment course - DevOps (CIP_DAW_DPL) !",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "type": "test",
     "homepage": "http://www.vernedevelop.com",
     "time": "2020-02-16 20:30:00",
